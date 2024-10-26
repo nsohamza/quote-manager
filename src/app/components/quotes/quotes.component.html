@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>My Quotes</h1>
+  
+  <div class="form-group">
+    <input type="text" [(ngModel)]="newQuote" placeholder="Enter your favorite quote" class="form-control">
+    <button (click)="addQuote()" class="btn btn-success mt-2">Add Quote</button>
+  </div>
+  
+  <ul class="list-group mt-3">
+    <li *ngFor="let quote of quotes" class="list-group-item">
+      {{ quote.text }}
+    </li>
+  </ul>
+</div>
+

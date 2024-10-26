@@ -1,0 +1,36 @@
+/* Styles for the navigation */
+nav {
+  background-color: #767589; /* Light background for the nav */
+  padding: 10px; /* Add padding around nav items */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between nav and content */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 15px; /* Space between items */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #535b65; /* Bootstrap primary color */
+  padding: 8px 15px; /* Add padding to links */
+  border-radius: 4px; /* Rounded corners for links */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+nav a:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack nav items on smaller screens */
+    align-items: center; /* Center items */
+  }
+}

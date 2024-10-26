@@ -1,0 +1,19 @@
+/* General styles for the app container */
+.container {
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  font-family: Arial, sans-serif; /* Use a clean font */
+}
+/* Styles for headings */
+h1 {
+  text-align: center; /* Center the main heading */
+  color: #333; /* Dark color for the heading */
+}
+
+/* Styles for the router outlet */
+router-outlet {
+  display: block; /* Ensure the router outlet is a block element */
+}
+
+
